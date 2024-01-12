@@ -1,3 +1,8 @@
+:root {
+  --main-color: #272044;
+  --secondary-color: #ffffff;
+  --teritary-color: #f8f8f8;
+}
 body {
   font-family: "Poppins", sans-serif;
   background-color: #143698;
@@ -6,6 +11,10 @@ body {
 .container {
   max-width: 1400px;
   margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
 }
 .grid {
   display: grid;
@@ -23,10 +32,15 @@ body {
 }
 
 section {
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
 }
+
+section.secondary {
+  background-color: var(--teritary-color);
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
     url("/images/jamaica.jpeg");
@@ -66,7 +80,7 @@ header a {
   line-height: 1.5;
 
   text-align: center;
-  color: #272044;
+  color: var(--main-color);
   padding: 16px 32px;
   margin-top: 32px;
   display: inline-block;
@@ -86,7 +100,7 @@ main h2 {
   margin: 0;
   line-height: 1.5;
   letter-spacing: 5px;
-  color: #272044;
+  color: var(--main-color);
   opacity: 0.3;
   text-transform: uppercase;
 }
@@ -95,16 +109,17 @@ main h3 {
   font-weight: 700;
   font-size: 40px;
   line-height: 1.5;
-  color: #272044;
+  color: var(--main-color);
   margin: 0;
 }
 main p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #272044;
+  color: var(--main-color);
   opacity: 0.7;
 }
+
 footer {
   color: white;
   background-image: linear-gradient(
